@@ -34,6 +34,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/test001.css",
               "src/styles.scss"
             ],
             "scripts": []
