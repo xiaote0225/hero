@@ -1,32 +1,33 @@
-<div class="alert alert-secondary" role="alert">
-  A simple primary alert—check it out!
-</div>
-<div class="alert alert-secondary" role="alert">
-  A simple secondary alert—check it out!
-</div>
-<div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-    Dropdown link
-  </a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
-
-<h1 class="title">{{ title }}</h1>
-<p>name:{{ heroName }}</p>
-
-
-大家好，才是真的好!!!!
+<img [src]="madaoPic" [alt]="user">
 <hr>
-<p>getVal:{{ getVal() }}</p>
+<img bind-src="madaoPic" bind-alt="user">
 <hr>
-<p>job:{{ job }}</p>
+<table class="table-bordered">
+  <tr>
+    <th>name</th>
+    <th>phone</th>
+    <th>age</th>
+  </tr>
+  <tr>
+    <td>张三</td>
+    <td>13398490594</td>
+    <td>33</td>
+  </tr>
+  <tr>
+    <td [colSpan]="colspan">李四</td>
+    <td>15079049984</td>
+    <td>22</td>
+  </tr>
+</table>
 <hr>
-<p>The sum of 1+1 is {{ 1+1 }}.</p>
-<p>price的7折{{ price * 0.7 }}</p>
-<p>与方法结合: {{ price * 0.7 + getVal()}}</p>
-<p>{{ gender == 0 ? '男' : '女' }}</p>
+<button class="btn btn-primary" [disabled]="isDisabled">click</button>
+<hr>
+<p [attr.data-title]="customTitle">一段文字</p>
+<p [title]="customTitle1">一段文字</p>
+<p [attr.title]="customTitle3">又是一段文字3</p>
+
+<img src="{{ user2.pic }}" alt="{{ user2.name }}" />
+<hr>
+<img [src]="madaoPic" [alt]="'user'">
+<hr>
+<img src="madaoPic" [alt]="'user'+user2.pic">

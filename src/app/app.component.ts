@@ -16,15 +16,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hero';
-  heroName = '要盖';
-  price = 2000;
-  gender = 0;
-  get job():string{
-    return "战士";
-  }
+  user="madao";
+  madaoPic="../assets/images/icon-play-cover.png";
+  colspan=2;
+  isDisabled=true;
+  customTitle="一段文字001";
+  customTitle1="一段文字002";
+  customTitle3="一段文字003";
 
-  getVal():number {
-    return 33;
-  }
+  user2 = {
+    name: 'madao',
+    pic: this.madaoPic
+  };
 }
