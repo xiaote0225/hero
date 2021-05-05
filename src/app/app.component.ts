@@ -16,16 +16,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  user="madao";
-  madaoPic="../assets/images/icon-play-cover.png";
-  colspan=2;
-  isDisabled=true;
-  customTitle="一段文字001";
-  customTitle1="一段文字002";
-  customTitle3="一段文字003";
-
-  user2 = {
-    name: 'madao',
-    pic: this.madaoPic
+  theme = 'primary';
+  isSuccess = true;
+  btnCls = "btn btn-primary";
+  btnCls2 = ['btn','btn-success'];
+  btnCls3 = {
+    'btn': true,
+    'btn-info': true
+  };
+  style1 = 'width: 200px;height: 50px;text-align: center;border: 1px solid;line-height:50px;';
+  style2 = ['width','200px','height','50px','text-align','center','border','1px solid'];
+  style3 = {
+    width: '200px',
+    height: '50px',
+    'text-align': 'center',
+    border: '1px solid'
   };
 }
