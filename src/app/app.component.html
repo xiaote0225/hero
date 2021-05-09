@@ -1,1 +1,9 @@
 <button type="button" (click)="onClick()">Primary</button>
+<button type="button" (click)="onClick1($event)">Primary002</button>
+<hr>
+<input type="text" (keyup)="onInput($event)">
+<hr>
+<div style="width: 200px;height: 200px;background-color: red;" (click)="clickParent()">
+  <div style="width: 100px;height: 100px;background-color: green;" (click)="clickChild($event)">
+  </div>
+</div>
