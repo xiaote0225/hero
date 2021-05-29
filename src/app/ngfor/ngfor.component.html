@@ -1,0 +1,25 @@
+<button (click)="add()">增加值</button>
+<button (click)="sub()">减少值</button>
+<button (click)="reset()">重置</button>
+<ul>
+  <li *ngFor="let item of heroes;
+              trackBy:trackByHero;
+              index as i;
+              let len = count;
+              let ev = even;
+              odd as od;
+              let f = first;
+              last as l
+              "
+              [class.even]="ev"
+              [class.odd]="od">
+              <p>name:{{item.name}}</p>
+              <p>index:{{i}}</p>
+              <p>count:{{len}}</p>
+              <p>even:{{ev}}</p>
+              <p>odd:{{od}}</p>
+              <p>first:{{f}}</p>
+              <p>last:{{l}}</p>
+              <hr>
+  </li>
+</ul>
