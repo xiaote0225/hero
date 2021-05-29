@@ -16,6 +16,7 @@ import { ItemDetailComponentComponent } from './item-detail-component/item-detai
 import { ItemOutputComponent } from './item-output/item-output.component';
 import { SizerComponent } from './sizer/sizer.component';
 import { NgifComponent } from './ngif/ngif.component';
+import { NgswitchComponent } from './ngswitch/ngswitch.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NgifComponent } from './ngif/ngif.component';
     ItemDetailComponentComponent,
     ItemOutputComponent,
     SizerComponent,
-    NgifComponent
+    NgifComponent,
+    NgswitchComponent
   ],
   imports: [
     BrowserModule,

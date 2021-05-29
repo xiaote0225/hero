@@ -1,0 +1,23 @@
+<p>
+  <input type="radio" name="fruit" value="apple" id="apple" [(ngModel)]="fruit">
+  <label for="apple">🍎</label>
+</p>
+<p>
+  <input type="radio" name="fruit" value="banana" id="banana" [(ngModel)]="fruit">
+  <label for="banana">🍌</label>
+</p>
+<p>
+  <input type="radio" name="fruit" value="orange" id="orange" [(ngModel)]="fruit">
+  <label for="orange">桔子</label>
+</p>
+<p>
+  <input type="radio" name="fruit" value="ohter" id="other" [(ngModel)]="fruit">
+  <label for="apple">other</label>
+</p>
+selected fruit: {{fruit}}
+<div [ngSwitch]="fruit">
+  <p *ngSwitchCase="'apple'">这是苹果....</p>
+  <p *ngSwitchCase="'banana'">这是香蕉....</p>
+  <p *ngSwitchCase="'orange'">这是桔子....</p>
+  <p *ngSwitchDefault>other....</p>
+</div>
