@@ -18,6 +18,7 @@ import { SizerComponent } from './sizer/sizer.component';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
+import { RefComponentComponent } from './ref-component/ref-component.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
     SizerComponent,
     NgifComponent,
     NgswitchComponent,
-    NgforComponent
+    NgforComponent,
+    RefComponentComponent
   ],
   imports: [
     BrowserModule,

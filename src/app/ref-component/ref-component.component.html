@@ -1,0 +1,6 @@
+<input type="text" #inputVal>
+<button (click)="log(inputVal.value)">点击我</button>
+<hr>
+<button (click)="sizeTemp.inc()">++++</button>
+<app-sizer [(size)]="sizeVal" ref-sizeTemp></app-sizer>
+
