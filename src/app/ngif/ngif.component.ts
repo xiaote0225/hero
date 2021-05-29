@@ -14,7 +14,7 @@ export class NgifComponent implements OnInit {
   condition5: boolean = true;
 
   // elseblock123 : TemplateRef<any> = null;
-  @ViewChild('firstEle',{static: true})
+  // @ViewChild('firstEle',{static: true})
   // primaryBlock: TemplateRef<any> = null;
 
 
