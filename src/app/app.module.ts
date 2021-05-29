@@ -13,6 +13,7 @@ import { Comp7Component } from './comp7/comp7.component';
 import { Comp8Component } from './comp8/comp8.component';
 import { ItemDetailComponentComponent } from './item-detail-component/item-detail-component.component';
 import { ItemOutputComponent } from './item-output/item-output.component';
+import { SizerComponent } from './sizer/sizer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ItemOutputComponent } from './item-output/item-output.component';
     Comp7Component,
     Comp8Component,
     ItemDetailComponentComponent,
-    ItemOutputComponent
+    ItemOutputComponent,
+    SizerComponent
   ],
   imports: [
     BrowserModule,
