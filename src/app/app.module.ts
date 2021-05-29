@@ -15,6 +15,7 @@ import { Comp8Component } from './comp8/comp8.component';
 import { ItemDetailComponentComponent } from './item-detail-component/item-detail-component.component';
 import { ItemOutputComponent } from './item-output/item-output.component';
 import { SizerComponent } from './sizer/sizer.component';
+import { NgifComponent } from './ngif/ngif.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SizerComponent } from './sizer/sizer.component';
     Comp8Component,
     ItemDetailComponentComponent,
     ItemOutputComponent,
-    SizerComponent
+    SizerComponent,
+    NgifComponent
   ],
   imports: [
     BrowserModule,

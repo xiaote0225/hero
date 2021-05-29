@@ -1,0 +1,37 @@
+<button (click)="condition = !condition">点我切换</button>
+<div *ngIf="condition">
+  第一块内容!!!!!!
+</div>
+<hr>
+<button (click)="condition2 = !condition2">点我切换2</button>
+<ng-template [ngIf]="condition2">
+  <div>
+    第二块内容!!!!!!
+  </div>
+</ng-template>
+<hr>
+<button (click)="condition3 = !condition3">点我切换3</button>
+<div *ngIf="condition3 else hideArear">第三块内容显示。。。。</div>
+<ng-template #hideArear>
+  <div>
+    第三块内容隐藏！！！
+  </div>
+</ng-template>
+<hr>
+<button (click)="condition4 = !condition4">点我切换4</button>
+<div *ngIf="condition4; then thenblock else elseblock">jkjkjlkjlkjkljl</div>
+<ng-template #thenblock>
+  <div>thenblock 123</div>
+</ng-template>
+<ng-template #elseblock>
+  <div>elseblock 456</div>
+</ng-template>
+<hr>
+<button (click)="condition5 = !condition5">点我切换5</button>
+<!-- <p *ngIf="condition5 else elseblock123">{{condition5}}显示</p> -->
+<ng-template #firstEle>
+  <div>
+    啦啦啦啦
+  </div>
+</ng-template>
+
