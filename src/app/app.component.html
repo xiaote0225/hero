@@ -1,2 +1,22 @@
-<app-sizer [(size)]="size"></app-sizer>
-<label [style.font-size.px]="size">parent size: {{size}}</label>
+<input type="text" [(ngModel)]="name" #crl="ngModel" required>
+<p>value:{{name}}</p>
+<p>valid:{{crl.valid}}</p>
+<button (click)="setVal()">设置</button>
+<hr>
+<input type="text" [value]="testval" (input)="onclick($event)">
+<p>testval:{{testval}}</p>
+<hr>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <input type="text" name="first" ngModel required #first="ngModel"/>
+  <input type="text" name="last" ngModel>
+  <button>Submit</button>
+</form>
+<p>First name value: {{first.value}}</p>
+<p>First name valid: {{first.valid}}</p>
+<p>Form value:{{f.value | json}}</p>
+<p>Form valid:{{f.valid}}</p>
+<hr>
+<input type="text" [ngModel]="expandVal" (ngModelChange)="expandVal = $event">
+<p>
+  expandVal:{{expandVal}}
+</p>
