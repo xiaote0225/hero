@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   itemVal = '666666';
+  receiveVal(str: string): void{
+    console.log('receive val',str);
+  }
 
 }

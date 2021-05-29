@@ -10,7 +10,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./item-detail-component.component.scss']
 })
 export class ItemDetailComponentComponent implements OnInit {
-  @Input() item: string = '';
+  @Input('abc') item: string = '';
 
   constructor() { }
 
