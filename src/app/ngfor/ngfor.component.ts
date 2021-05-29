@@ -12,6 +12,7 @@ interface Hero {
   styleUrls: ['./ngfor.component.scss']
 })
 export class NgforComponent implements OnInit {
+  value = '';
   heroes: Hero[] =  Heroes;
   constructor() { }
   add(){
