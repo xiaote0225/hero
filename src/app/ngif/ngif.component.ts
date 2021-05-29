@@ -13,17 +13,17 @@ export class NgifComponent implements OnInit {
   condition4: boolean = true;
   condition5: boolean = true;
 
-  // elseblock123 : TemplateRef<any> = null;
-  // @ViewChild('firstEle',{static: true})
-  // primaryBlock: TemplateRef<any> = null;
+  elseblock123 : TemplateRef<any> | null = null;
+  @ViewChild('firstEle',{static: true})
+  primaryBlock: TemplateRef<any> | null = null;
 
 
   constructor() {
 
-    // this.elseblock123 = this.primaryBlock;
   }
 
   ngOnInit(): void {
+    this.elseblock123 = this.primaryBlock;
   }
 
 }
