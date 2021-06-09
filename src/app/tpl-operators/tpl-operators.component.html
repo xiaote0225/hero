@@ -1,0 +1,12 @@
+<p>uppsercase pipe:{{title | uppercase}}</p>
+<p>uppercase pipe:{{title | uppercase | lowercase}}</p>
+<p>json:{{obj | json}}</p>
+<p>{{now | date:'longDate'}}</p>
+<p>{{now | date: 'yyyy-MM-dd'}}</p>
+<hr>
+<p>hero:{{hero?.name}}</p>
+<p *ngIf="hero">
+  hero:{{hero.name}}
+</p>
+
+<!-- <p>{{$any(hero).abc}}</p> -->

@@ -18,6 +18,7 @@ import { SizerComponent } from './sizer/sizer.component';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
+import { TplOperatorsComponent } from './tpl-operators/tpl-operators.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
     SizerComponent,
     NgifComponent,
     NgswitchComponent,
-    NgforComponent
+    NgforComponent,
+    TplOperatorsComponent
   ],
   imports: [
     BrowserModule,
