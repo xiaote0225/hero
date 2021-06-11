@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, Output, SimpleChanges, EventEmitter } from '@angular/core';
 
 
 export interface TransferItem {
@@ -18,6 +18,8 @@ export class TransferPanelComponent implements OnInit, OnChanges {
   inputList: TransferItem[] = [];
   @Input()
   showInputFlag!: boolean;
+  @Output()
+  checkedChange = new EventEmitter<TransferItem[]>();
 
   showList: TransferItem[] = [];
   checkedList: TransferItem[] = [];
@@ -28,6 +30,7 @@ export class TransferPanelComponent implements OnInit, OnChanges {
     if(inputList){
       this.showList = inputList.currentValue.slice(0);
     }
+    this.checkedList = this.inputList.filter(item => item.checked === true);
   }
 
   ngOnInit(): void {
@@ -45,7 +48,7 @@ export class TransferPanelComponent implements OnInit, OnChanges {
     }else{
       this.checkedList.splice(i,1);
     }
-
+    this.checkedChange.emit(this.checkedList);
   }
 
   isChecked(obj: TransferItem): boolean{

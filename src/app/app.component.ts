@@ -25,5 +25,9 @@ export class AppComponent implements OnInit{
     }
   }
 
+  send(data: TransferItem[]){
+    console.log('send',data);
+  }
+
 
 }
