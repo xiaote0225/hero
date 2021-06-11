@@ -16,6 +16,8 @@ export interface TransferItem {
 export class TransferPanelComponent implements OnInit, OnChanges {
   @Input()
   inputList: TransferItem[] = [];
+  @Input()
+  showInputFlag!: boolean;
 
   showList: TransferItem[] = [];
   checkedList: TransferItem[] = [];

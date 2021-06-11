@@ -4,7 +4,7 @@
       <span *ngIf="checkedList.length > 0">{{checkedList.length}}/</span>{{inputList.length}}
     </p>
   </div>
-  <div class="search-box p-2">
+  <div class="search-box p-2" *ngIf="showInputFlag">
     <input type="text" class="form-control" placeholder="请输入关键字" (input)="search($event)">
   </div>
   <ul class="list mb-0 overflow-auto">
