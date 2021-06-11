@@ -19,6 +19,7 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { TplOperatorsComponent } from './tpl-operators/tpl-operators.component';
+import { TransferPanelComponent } from './transfer-panel/transfer-panel.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TplOperatorsComponent } from './tpl-operators/tpl-operators.component';
     NgifComponent,
     NgswitchComponent,
     NgforComponent,
-    TplOperatorsComponent
+    TplOperatorsComponent,
+    TransferPanelComponent
   ],
   imports: [
     BrowserModule,
