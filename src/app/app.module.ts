@@ -20,6 +20,8 @@ import { NgswitchComponent } from './demos/ngswitch/ngswitch.component';
 import { SizerComponent } from './demos/sizer/sizer.component';
 import { TplOperatorsComponent } from './demos/tpl-operators/tpl-operators.component';
 import { TransferPanelComponent } from './demos/transfer-panel/transfer-panel.component';
+import { LayoutComponent } from './pages/layout/layout.component';
+import { HeroComponent } from './pages/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { TransferPanelComponent } from './demos/transfer-panel/transfer-panel.co
     NgswitchComponent,
     NgforComponent,
     TplOperatorsComponent,
-    TransferPanelComponent
+    TransferPanelComponent,
+    LayoutComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
