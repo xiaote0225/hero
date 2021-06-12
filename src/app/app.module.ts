@@ -22,6 +22,7 @@ import { TplOperatorsComponent } from './demos/tpl-operators/tpl-operators.compo
 import { TransferPanelComponent } from './demos/transfer-panel/transfer-panel.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { HeroComponent } from './pages/hero/hero.component';
+import { HighlightDirective } from './demos/directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HeroComponent } from './pages/hero/hero.component';
     TplOperatorsComponent,
     TransferPanelComponent,
     LayoutComponent,
-    HeroComponent
+    HeroComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
