@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Heroes from './../config/heroes';
+import Heroes from './heroes';
 
 export interface Hero {
   id: string;

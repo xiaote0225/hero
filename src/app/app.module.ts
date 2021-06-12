@@ -4,22 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Comp1Component } from './comp1/comp1.component';
-import { Comp2Component } from './comp2/comp2.component';
-import { Comp3Component } from './comp3/comp3.component';
-import { Comp4Component } from './comp4/comp4.component';
-import { Comp5Component } from './comp5/comp5.component';
-import { Comp6Component } from './comp6/comp6.component';
-import { Comp7Component } from './comp7/comp7.component';
-import { Comp8Component } from './comp8/comp8.component';
-import { ItemDetailComponentComponent } from './item-detail-component/item-detail-component.component';
-import { ItemOutputComponent } from './item-output/item-output.component';
-import { SizerComponent } from './sizer/sizer.component';
-import { NgifComponent } from './ngif/ngif.component';
-import { NgswitchComponent } from './ngswitch/ngswitch.component';
-import { NgforComponent } from './ngfor/ngfor.component';
-import { TplOperatorsComponent } from './tpl-operators/tpl-operators.component';
-import { TransferPanelComponent } from './transfer-panel/transfer-panel.component';
+import { Comp2Component } from './demos/comp2/comp2.component';
+import { Comp3Component } from './demos/comp3/comp3.component';
+import { Comp4Component } from './demos/comp4/comp4.component';
+import { Comp5Component } from './demos/comp5/comp5.component';
+import { Comp6Component } from './demos/comp6/comp6.component';
+import { Comp7Component } from './demos/comp7/comp7.component';
+import { Comp8Component } from './demos/comp8/comp8.component';
+import { Comp1Component } from './demos/components/comp1/comp1.component';
+import { ItemDetailComponentComponent } from './demos/item-detail-component/item-detail-component.component';
+import { ItemOutputComponent } from './demos/item-output/item-output.component';
+import { NgforComponent } from './demos/ngfor/ngfor.component';
+import { NgifComponent } from './demos/ngif/ngif.component';
+import { NgswitchComponent } from './demos/ngswitch/ngswitch.component';
+import { SizerComponent } from './demos/sizer/sizer.component';
+import { TplOperatorsComponent } from './demos/tpl-operators/tpl-operators.component';
+import { TransferPanelComponent } from './demos/transfer-panel/transfer-panel.component';
 
 @NgModule({
   declarations: [

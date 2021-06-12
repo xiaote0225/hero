@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit } from '@angular/core';
-import { TransferItem } from './transfer-panel/transfer-panel.component';
+import { TransferItem } from './demos/transfer-panel/transfer-panel.component';
 
 @Component({
   selector: 'app-root',
