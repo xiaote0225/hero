@@ -7,7 +7,7 @@ import { TransferItem } from './demos/transfer-panel/transfer-panel.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  color: string = 'yellow';
+  color: string = '';
 
   ngOnInit(): void {
   }
