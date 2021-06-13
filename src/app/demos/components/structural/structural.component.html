@@ -1,0 +1,75 @@
+<!-- <p *ngIf="show as s">test ngif alias -- {{ s }}</p>
+<p *ngIf="show;let f">test ngif alias -- {{ f }}</p>
+<ng-template [ngIf]="show" let-s>
+  <p>test ngif alias;{{ s }}</p>
+</ng-template> -->
+
+<!-- <ng-container>
+  <ng-template>
+    <p>test ngif alias {{ show }}</p>
+  </ng-template>
+</ng-container> -->
+<!-- <div [ngSwitch]="fruit">
+  <p *ngSwitchCase="'apple'">这是苹果</p>
+  <p *ngSwitchCase="'pear'">这是梨</p>
+  <p *ngSwitchCase="'grape'">这是葡萄</p>
+  <p *ngSwitchDefault>啥都不是</p>
+</div> -->
+
+<!-- <div [ngSwitch]="fruit">
+  <ng-template ngSwitchCase="apple">
+    <p>这是苹果</p>
+  </ng-template>
+  <ng-template ngSwitchCase="pear">
+    <p>这是梨</p>
+  </ng-template>
+  <ng-template ngSwitchCase="grape">
+    <p>这是葡萄</p>
+  </ng-template>
+  <ng-template ngSwitchDefault>
+    <p>啥都不是</p>
+  </ng-template>
+</div> -->
+
+<!-- <ul>
+  <li *ngFor="let item of heros; let i = index; count as len; let ev = even; let od = odd; let f = first ; let l = last; trackBy: trackByHero" [class.even]="ev" [class.odd]="od">
+    <p>index:{{ i }}</p>
+    <p>count:{{ len }}</p>
+    <p>name:{{ item.name }}</p>
+    <p>first:{{ f }}; last: {{l}}</p>
+  </li>
+</ul> -->
+
+<!-- <ul>
+  <ng-template ngFor [ngForOf]="heros" let-item let-i="index" let-len="count" let-ev="even" let-od="odd" let-f="first" let-l="last" [ngForTrackBy]="trackByHero">
+    <li [class.even]="ev" [class.odd]="od">
+      <p>index:{{ i }}</p>
+      <p>count:{{ len }}</p>
+      <p>name:{{ item.name }}</p>
+      <p>first:{{ f }} -- last: {{ l }}</p>
+    </li>
+  </ng-template>
+</ul> -->
+
+
+<!-- <p>Hip!</p>
+<ng-template [ngIf]="true">
+  <p>Mid!</p>
+</ng-template>
+<p>Hooray!</p> -->
+
+<!-- <div>
+  <h2>
+    jkdsjljsdkfj
+  </h2>
+  <ng-container *ngIf="show">
+    <h2>
+      jflksjlfkjdslkfjdsklfjdklsjfkdlsjaf
+    </h2>
+  </ng-container>
+  <h2>
+    jflksjlfkjdslkfjdsklfjdklsjfkdlsjaf
+  </h2>
+</div> -->
+
+<!-- <button class="btn btn-primary" (click)="show = !show">toggle</button> -->
