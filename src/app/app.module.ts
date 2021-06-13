@@ -25,6 +25,7 @@ import { HeroComponent } from './pages/hero/hero.component';
 import { HighlightDirective } from './demos/directives/highlight.directive';
 import { StructuralComponent } from './demos/components/structural/structural.component';
 import { ExampleComponent } from './demos/example/example.component';
+import { UnlessDirective } from './demos/directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ExampleComponent } from './demos/example/example.component';
     HeroComponent,
     HighlightDirective,
     StructuralComponent,
-    ExampleComponent
+    ExampleComponent,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

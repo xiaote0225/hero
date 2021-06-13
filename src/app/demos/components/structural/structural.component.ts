@@ -13,6 +13,8 @@ export interface Hero {
 export class StructuralComponent implements OnInit {
   show = true;
 
+  showUnless = false;
+
   fruit = 'pear';
 
   heros: Hero[] = [
