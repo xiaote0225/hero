@@ -14,8 +14,8 @@ export class TplContainerComponent implements OnInit, AfterViewInit {
   @ViewChild('thirdTpl', { read: TemplateRef }) readonly thirdTpl!: TemplateRef<void>;
   @ViewChild('fourthTpl', { read: TemplateRef }) readonly fourTpl!: TemplateRef<void>;
   @ViewChild('firstTpl', { read: TemplateRef }) readonly firstTpl1!: TemplateRef<void>;
-  @ViewChild('freeTpl', { read: TemplateRef }) readonly freeTpl!: TemplateRef<null>;
-  @ViewChild('secondContainer', {read: ViewContainerRef,static: true}) readonly secondContain!: ViewContainerRef;
+  @ViewChild('freeTpl', { read: TemplateRef }) readonly freeTpl!: TemplateRef<any>;
+  @ViewChild('secondContainer', {read: ViewContainerRef, static: true}) readonly secondContain!: ViewContainerRef;
 
   private freeViewRef: EmbeddedViewRef<null>;
 
@@ -52,7 +52,7 @@ export class TplContainerComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     console.log('viewInit', this.freeTpl);
-    this.freeViewRef = this.freeTpl.createEmbeddedView(null);
+    this.freeViewRef = this.freeTpl.createEmbeddedView({ $implicit: 'defaultValue', free: 'aa'});
     this.firstContain.createEmbeddedView(this.fourTpl);
   }
 
