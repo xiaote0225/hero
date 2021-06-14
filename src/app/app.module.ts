@@ -26,6 +26,7 @@ import { HighlightDirective } from './demos/directives/highlight.directive';
 import { StructuralComponent } from './demos/components/structural/structural.component';
 import { ExampleComponent } from './demos/example/example.component';
 import { UnlessDirective } from './demos/directives/unless.directive';
+import { XiaoteDirective } from './demos/directives/xiaote.directive';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { UnlessDirective } from './demos/directives/unless.directive';
     HighlightDirective,
     StructuralComponent,
     ExampleComponent,
-    UnlessDirective
+    UnlessDirective,
+    XiaoteDirective
   ],
   imports: [
     BrowserModule,
