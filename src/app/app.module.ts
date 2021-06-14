@@ -28,6 +28,7 @@ import { ExampleComponent } from './demos/example/example.component';
 import { UnlessDirective } from './demos/directives/unless.directive';
 import { XiaoteDirective } from './demos/directives/xiaote.directive';
 import { TplContainerComponent } from './demos/components/tpl-container/tpl-container.component';
+import { TplOutletComponent } from './demos/components/tpl-outlet/tpl-outlet.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { TplContainerComponent } from './demos/components/tpl-container/tpl-cont
     ExampleComponent,
     UnlessDirective,
     XiaoteDirective,
-    TplContainerComponent
+    TplContainerComponent,
+    TplOutletComponent
   ],
   imports: [
     BrowserModule,

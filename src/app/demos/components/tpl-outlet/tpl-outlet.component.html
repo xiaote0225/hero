@@ -1,0 +1,23 @@
+
+<section>
+  <p>tpl-outlet works!</p>
+  <ng-container *ngTemplateOutlet="render || defaultRef; context:myContext">
+
+  </ng-container>
+  <hr>
+
+  <ng-container [ngTemplateOutlet]="render || defaultRef" [ngTemplateOutletContext]="myContext"></ng-container>
+  <hr>
+  <ng-template *ngTemplateOutlet="render || defaultRef;context:myContext"></ng-template>
+  <hr>
+  <ng-template [ngTemplateOutlet]="render || defaultRef" [ngTemplateOutletContext]="myContext"></ng-template>
+
+
+
+
+</section>
+
+<ng-template #defaultRef let-def let-attr="abc">
+  我是模板默认值！default: {{ def }}, attr: {{ attr }}
+</ng-template>
+

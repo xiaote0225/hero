@@ -15,4 +15,10 @@
 
 <!-- <app-example></app-example> -->
 
-<app-tpl-container></app-tpl-container>
+<!-- <app-tpl-container></app-tpl-container> -->
+<app-tpl-outlet [render]="outerRef"></app-tpl-outlet>
+
+<ng-template #outerRef let-default let-attr="abc">
+  我是外部值,default: {{default}},attr: {{ attr }}
+</ng-template>
+
