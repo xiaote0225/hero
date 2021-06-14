@@ -1,10 +1,10 @@
 import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 
-export class UnlessContext{
-  $implicit = false;
-  appUnless = false;
-  attr = '';
+export class UnlessContext<T = unknown>{
+  $implicit: T = null!;
+  appUnless: T = null!;
+  attr: T = null!;
 }
 
 @Directive({
