@@ -1,0 +1,24 @@
+<p>view-child works!</p>
+<div #box>
+  div001
+</div>
+<div #box>
+  div002
+</div>
+<div #box>
+  div003
+</div>
+<div #box>
+  div004
+</div>
+<div #box>
+  div005
+</div>
+<button class="btn btn-primary" (click)="showFlag = !showFlag">toggle</button>
+<hr>
+<app-panel></app-panel>
+<hr>
+<app-panel #panel></app-panel>
+<app-panel #panel></app-panel>
+<app-panel #panel *ngIf="showFlag"></app-panel>
+<app-panel #panel *ngIf="showFlag"></app-panel>
