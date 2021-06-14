@@ -1,0 +1,51 @@
+<div class="box" #box>
+  <button class="btn btn-primary mr-1" (click)="insert(secondTpl)">insert second</button>
+  <button class="btn btn-primary mr-1" (click)="insert(thirdTpl)">insert third</button>
+  <button class="btn btn-primary mr-1" (click)="insert(fourthTpl)">insert fourth</button>
+  <button class="btn btn-primary mr-1" (click)="insertAll()">insert all</button>
+  <button class="btn btn-primary mr-1" (click)="judge()">judge</button>
+  <button class="btn btn-primary mr-1" (click)="insertFree()">insert free</button>
+  <button class="btn btn-primary mr-1" (click)="getOne()">get one</button>
+  <button class="btn btn-primary mr-1" (click)="insertFree1()">insertFree1</button>
+  <button class="btn btn-primary mr-1" (click)="move2To4()">move2To4</button>
+  <button class="btn btn-primary mr-1" (click)="move2ToOther()">move2ToOther</button>
+
+
+</div>
+
+<ng-template #firstTpl>
+  <p>first tpl content</p>
+</ng-template>
+
+<ng-template #secondTpl>
+  <p>第二段template</p>
+</ng-template>
+
+<ng-template #thirdTpl>
+  <p>第三段template</p>
+</ng-template>
+
+<ng-template #fourthTpl>
+  <p>第四段template</p>
+</ng-template>
+
+<ng-template #freeTpl>
+  <p>自由的template</p>
+</ng-template>
+
+<p>
+  first container:
+  <ng-container #firstContainer></ng-container>
+</p>
+
+<hr>
+
+<p>
+  second container:
+  <ng-container #secondContainer></ng-container>
+
+</p>
+
+
+
+

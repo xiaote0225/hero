@@ -27,6 +27,7 @@ import { StructuralComponent } from './demos/components/structural/structural.co
 import { ExampleComponent } from './demos/example/example.component';
 import { UnlessDirective } from './demos/directives/unless.directive';
 import { XiaoteDirective } from './demos/directives/xiaote.directive';
+import { TplContainerComponent } from './demos/components/tpl-container/tpl-container.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { XiaoteDirective } from './demos/directives/xiaote.directive';
     StructuralComponent,
     ExampleComponent,
     UnlessDirective,
-    XiaoteDirective
+    XiaoteDirective,
+    TplContainerComponent
   ],
   imports: [
     BrowserModule,
