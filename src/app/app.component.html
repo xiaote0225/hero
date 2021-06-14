@@ -16,9 +16,19 @@
 <!-- <app-example></app-example> -->
 
 <!-- <app-tpl-container></app-tpl-container> -->
-<app-tpl-outlet [render]="outerRef"></app-tpl-outlet>
+<!-- <app-tpl-outlet [render]="outerRef"></app-tpl-outlet> -->
 
-<ng-template #outerRef let-default let-attr="abc">
+<!-- <ng-template #outerRef let-default let-attr="abc">
   我是外部值,default: {{default}},attr: {{ attr }}
-</ng-template>
+</ng-template> -->
 
+
+<app-shadow>
+  <div>我是默认content内容</div>
+  <div class="out">
+    我是content .out内容
+  </div>
+  <a>
+    我是content a标签
+  </a>
+</app-shadow>
