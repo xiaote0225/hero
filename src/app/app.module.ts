@@ -34,6 +34,9 @@ import { ViewChildComponent } from './demos/components/view-child/view-child.com
 import { PanelComponent } from './demos/components/view-child/panel/panel.component';
 import { ContentChildComponent } from './demos/components/content-child/content-child.component';
 import { XiaotepanelComponent } from './demos/components/content-child/xiaotepanel/xiaotepanel.component';
+import { PipeComponent } from './demos/components/pipe/pipe.component';
+import { ExponentialStrengthPipe } from './demos/pipes/exponential-strength.pipe';
+import { FlyuserPipe } from './demos/pipes/flyuser.pipe';
 
 @NgModule({
   declarations: [
@@ -67,7 +70,10 @@ import { XiaotepanelComponent } from './demos/components/content-child/xiaotepan
     ViewChildComponent,
     PanelComponent,
     ContentChildComponent,
-    XiaotepanelComponent
+    XiaotepanelComponent,
+    PipeComponent,
+    ExponentialStrengthPipe,
+    FlyuserPipe
   ],
   imports: [
     BrowserModule,

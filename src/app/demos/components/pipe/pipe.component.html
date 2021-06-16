@@ -1,0 +1,28 @@
+<div>
+  <p>Object</p>
+  <div *ngFor="let item of object | keyvalue">
+    {{item.key}}: {{item.value}}
+  </div>
+  <p>Map</p>
+  <div *ngFor="let item of map | keyvalue">
+    {{ item.key }} : {{ item.value }}
+  </div>
+  <p>exponentialStrength</p>
+  <div>{{3 | exponentialStrength}}</div>
+  <div>{{3 | exponentialStrength:3}}</div>
+  <div>Nomarl number: <input [(ngModel)]="power"></div>
+  <div>Boost factor: <input [(ngModel)]="factor"></div>
+  <div>
+    result: <span>{{ power | exponentialStrength:factor }}</span>
+  </div>
+  <h3>非纯管道</h3>
+  <div *ngFor="let item of currenUser">
+    id:{{item.id}},name:{{item.name}},canFly:{{item.canFly}}
+  </div>
+  <hr>
+  <div *ngFor="let item of currenUser | flyuser">
+    id:{{item.id}},name:{{item.name}},canFly:{{item.canFly}}
+  </div>
+  <hr>
+  <input type="text" #inputUser (keyup.enter)="addHero(inputUser.value);inputUser.value = ''">
+</div>
